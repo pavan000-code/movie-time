@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Noto+Sans+SC:wght@300&display=swap");
+:root {
+  --sec-color: #39a0ed;
+  --bg-color: #ffedd5;
+  --box-color: #461220;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pageWrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fdca40;
+}
+.navigation {
+  background-color: var(--sec-color);
+  padding: 2rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.nav-repo {
+  text-align: right;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 2em;
+  color: #32322c;
+}
+.nav-title {
+  font-size: 2em;
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  color: var(--bg-color);
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  font-family: "Noto Sans SC", serif;
+}
+.main-intro {
+  text-align: center;
+  margin-top: 6vh;
+}
+.main-body {
+  margin-top: 2vh;
+  margin: 1.5rem;
+}
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.button {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  margin: 1rem 1rem;
+  border-radius: 99px;
+  border: none;
+  outline: none;
+  color: rgba(0, 0, 0, 0.836);
+  background-color: rgb(255, 217, 0);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 200ms color ease-in;
+  box-shadow: #0000007d -5px 4px 8px 0px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  padding: 1rem;
+  margin: 2rem 3.5rem;
+  border: none;
+  width: 230px;
+  border-radius: 20px;
+  background-color: #7389ae;
+}
+.card-img img {
+  width: 100%;
+  max-height: 200px;
+  border: none;
+  border-radius: 20px;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #e5ece9;
+}
+.card-info span {
+  font-size: 15px;
+  color: #ffd6e4;
+  font-style: italic;
+}
+.footer {
+  background-color: var(--sec-color);
+  padding: 2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-tagline {
+  margin: 10px;
+}
+.footer-tagline h3 {
+  color: var(--bg-color);
+  text-align: center;
+  font-size: 1.6em;
+  font-family: "Cormorant Garamond", serif;
+}
+.footer-socials {
+  list-style: none;
+  text-align: center;
+  margin: 0 1rem;
+}
+.footer-inline {
+  display: inline-block;
+  padding: 0 10px;
+}
+footer i {
+  font-size: 1.5em;
+  color: #32322c;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .btnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-intro {
+    text-justify: center;
+    font-size: 0.7rem;
+  }
+}
